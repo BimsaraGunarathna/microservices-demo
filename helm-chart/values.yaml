@@ -103,16 +103,16 @@ currencyService:
       cpu: 200m
       memory: 256Mi
 
-emailService:
-  create: true
-  name: emailservice
-  resources:
-    requests:
-      cpu: 100m
-      memory: 64Mi
-    limits:
-      cpu: 200m
-      memory: 128Mi
+# emailService:
+#   create: true
+#   name: emailservice
+#   resources:
+#     requests:
+#       cpu: 100m
+#       memory: 64Mi
+#     limits:
+#       cpu: 200m
+#       memory: 128Mi
 
 frontend:
   create: true
@@ -151,16 +151,16 @@ loadGenerator:
       cpu: 500m
       memory: 512Mi
 
-paymentService:
-  create: true
-  name: paymentservice
-  resources:
-    requests:
-      cpu: 100m
-      memory: 128Mi
-    limits:
-      cpu: 200m
-      memory: 256Mi
+# paymentService:
+#   create: true
+#   name: paymentservice
+#   resources:
+#     requests:
+#       cpu: 100m
+#       memory: 128Mi
+#     limits:
+#       cpu: 200m
+#       memory: 256Mi
 
 productCatalogService:
   create: true
@@ -175,16 +175,16 @@ productCatalogService:
       cpu: 200m
       memory: 128Mi
 
-recommendationService:
-  create: true
-  name: recommendationservice
-  resources:
-    requests:
-      cpu: 100m
-      memory: 220Mi
-    limits:
-      cpu: 200m
-      memory: 450Mi
+# recommendationService:
+#   create: true
+#   name: recommendationservice
+#   resources:
+#     requests:
+#       cpu: 100m
+#       memory: 220Mi
+#     limits:
+#       cpu: 200m
+#       memory: 450Mi
 
 shippingService:
   create: true
