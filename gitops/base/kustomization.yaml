@@ -1,14 +1,17 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - adservice.yaml
-  - cartservice.yaml
-  - checkoutservice.yaml
-  - currencyservice.yaml
+  # Commented out heavy services to reduce memory for learning environment
+  # Each service requires 128-300MB memory, too much for local Colima setup
+  # - adservice.yaml      # Java/JVM - heavy memory usage
+  # - cartservice.yaml    # .NET - CoreCLR OOM issues
+  # - checkoutservice.yaml
+  # - currencyservice.yaml # .NET - CoreCLR OOM issues
   # - emailservice.yaml
-  - frontend.yaml
-  - loadgenerator.yaml
+  - frontend.yaml        # Keep UI for demonstration
+  # - loadgenerator.yaml  # Not needed for basic learning
   # - paymentservice.yaml
-  - productcatalogservice.yaml
-  # - recommendationservice.yaml
-  - shippingservice.yaml
+  # - productcatalogservice.yaml
+  # - recommendationservice.yaml # .NET - CoreCLR OOM issues
+  # - shippingservice.yaml
+  # Note: redis was part of cartservice.yaml, not included separately
