@@ -7,7 +7,6 @@ resources:
   - currencyservice.yaml
   - emailservice.yaml
   - frontend.yaml
-  - kustomization.yaml
   - loadgenerator.yaml
   - paymentservice.yaml
   - productcatalogservice.yaml

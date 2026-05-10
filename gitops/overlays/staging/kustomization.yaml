@@ -4,5 +4,7 @@ namespace: boutique-staging
 resources:
   - ../../base
 namePrefix: staging-
-commonLabels:
-  environment: staging
+labels:
+  - pairs:
+      environment: staging
+    includeSelectors: true
